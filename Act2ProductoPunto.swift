@@ -1,7 +1,7 @@
 //
 //Materia: MPOO 2025-1
 //Autor: Dolores Zeferino Yobel
-//Licence: MIT
+//License: MIT
 
 import Foundation
 
