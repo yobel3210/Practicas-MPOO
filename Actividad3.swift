@@ -1,6 +1,6 @@
 //MPOO 2025-1
 //Autor: Yobel Dolores Zeferino
-//Licence: MIT
+//License: MIT
 import Foundation
 
 class Promedio{
