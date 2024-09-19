@@ -117,13 +117,20 @@ class Inventario{
     for (key,value) in inventario{
       print("\(key): \(value)")
     }
-    print("Ingresa el nombre del producto que desea eliminar.")
-    guard let producto=readLine(),inventario.keys.contains(producto) else{
-      print("El producto no existe en el inventario\n")
-      return
+    print("¿Desea eliminar algún producto?")
+    print("1-Si\n2-No")
+    let opc = readLine()
+    if opc == "1"{
+      print("Ingresa el nombre del producto que desea eliminar.")
+      guard let producto=readLine(),inventario.keys.contains(producto) else{
+        print("El producto no existe en el inventario\n")
+        return
+      }
+      inventario.removeValue(forKey: producto)
+      print("Producto eliminado con exito\n")
+    }else{
+        print("No se eliminó ningun producto.")
     }
-    inventario.removeValue(forKey: producto)
-    print("Producto eliminado con exito\n")
   }
 
   func totalProductos(){
